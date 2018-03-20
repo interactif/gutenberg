@@ -333,11 +333,10 @@
 	> .editor-block-settings-menu,
 	> .editor-block-mover {
 		position: absolute;
-		top: 0;
+		top: -.9px; // .9px because of the collapsing margins hack, see line 27, @todo revisit when we allow margins to collapse
+		bottom: -.9px; // utilize full vertical space to increase hoverable area
 		padding: 0;
 		width: $block-side-ui-width;
-		height: 100%; // increase hoverable area
-		//margin-top: -1px; // stack borders on nested side UI
 	}
 
 	// Elevate when selected or hovered

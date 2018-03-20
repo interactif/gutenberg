@@ -265,6 +265,7 @@ export const settings = {
 		from: [
 			{
 				type: 'raw',
+				priority: 20,
 				isMatch: ( node ) => (
 					node.nodeName === 'P' &&
 					// Do not allow embedded content.
